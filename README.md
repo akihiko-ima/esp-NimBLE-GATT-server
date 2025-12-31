@@ -114,3 +114,49 @@ xcopy /e /i $env:IDF_PATH\examples\bluetooth\ble_get_started\nimble\NimBLE_GATT_
     <p align="center">
       <img src="docs/step10_check-ble-data.png" width="200">
     </p>
+
+---
+
+### Tips
+
+#### vscode で編集するとき
+
+- includePath などのエラーがでたときは、以下の手順を踏むことで解決する可能性あり。
+
+  - 1. コマンドパレット（ctrl+p）を開く
+  - 2. `ESP-IDF: Add vscode configuration folder`を入力してエンター
+
+#### ESP-IDF プロジェクトの設定ファイル
+
+- `idf.py menuconfig` コマンドを使うことで、ビルドのオプションの有効化・無効化を選択する。
+
+```bash
+idf.py menuconfig
+```
+
+- CPU 周波数の選択(以下から選択可能)
+  - default: `160 MHz`
+    - 80 MHz
+    - 160 MHz
+    - 240 MHz
+
+```bash
+Component config
+ └── ESP System Settings
+     └── CPU frequency
+```
+
+- FreeRTOS の Tick 周波数(以下から選択可能)
+  - default: `100Hz`
+    | Tick rate | 1 tick の時間 |
+    | --------- | ------------ |
+    | 100 Hz | 10 ms |
+    | 250 Hz | 4 ms |
+    | 1000 Hz | 1 ms |
+
+```bash
+Component config
+ └── FreeRTOS
+     └── Kernel
+         └── Tick rate (Hz)
+```
