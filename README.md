@@ -58,8 +58,11 @@
     <img src="docs/step4_activate-idf.png" width="150">
   </p>
 
-- 2-2. 開発ディレクトリへ移動
+- 2-2. 開発ディレクトリへ移動</br>
   ⚠️ 図中の`{Your User Name}`はご自身の環境に合わせて頂きますよう、よろしくお願いいたします。
+  <p align="center">
+    <img src="docs/step5_chanche-dir.png" width="550">
+  </p>
 
 - 2-3. ESP-IDF サンプルプロジェクトのコピー
 
@@ -69,7 +72,7 @@ xcopy /e /i $env:IDF_PATH\examples\bluetooth\ble_get_started\nimble\NimBLE_GATT_
 
 - 2-4. プロジェクトを VSCode で開く
 
-  - vscode 拡張機能(ESP-IDF)をインストールしていると以下のようなボタンが確認できるようになっています。
+  - vscode 拡張機能(ESP-IDF)をインストールしていると、以下のようなボタンが確認できるようになっています。
 
     - vscode 画面
     <p align="center">
@@ -80,8 +83,8 @@ xcopy /e /i $env:IDF_PATH\examples\bluetooth\ble_get_started\nimble\NimBLE_GATT_
 
   - 2-5-1. 対象のボードを USB に接続する
   - 2-5-2. `COMポート選択`(vscode 画面)ボタンをクリックし、対象の COM port を選択する
-  - 2-5-2. `開発ボート選択`(vscode 画面)ボタンをクリックし、対象の 開発ボード を選択する
-  - 2-5-2. `ビルド`(vscode 画面)ボタンをクリックし、対象プロジェクトをビルドする
+  - 2-5-3. `開発ボート選択`(vscode 画面)ボタンをクリックし、対象の 開発ボード を選択する
+  - 2-5-4. `ビルド`(vscode 画面)ボタンをクリックし、対象プロジェクトをビルドする
 
 - 2-6. 開発ボードに書き込み
 
