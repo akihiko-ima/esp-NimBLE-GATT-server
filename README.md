@@ -85,10 +85,32 @@ xcopy /e /i $env:IDF_PATH\examples\bluetooth\ble_get_started\nimble\NimBLE_GATT_
 
 - 2-6. 開発ボードに書き込み
 
-  - `書き込み`(vscode 画面)ボタンをクリックし、開発ボードに書き込みを行う。
+  - `書き込み`(vscode 画面)ボタンをクリックし、開発ボードに書き込みを行う。</br>
     ⚠️ ターミナルに`Connecting...`が表示され次第、開発ボードの基板上の`IO0`ボタンを押す。（ボードによって、書き込み方法に差異あり。）
 
 - 2-7. シリアルモニターで動作確認
   - `シリアルモニター`(vscode 画面)ボタンをクリックすることで、ターミナルにログが表示されます。
 
 ### 3. 動作確認
+
+- ESP32 に対して BLE による接続確認は`nRF Connect for Mobile`をおすすめします。
+  [https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile)
+- 3-1. BLE Scan を開始
+    <p align="center">
+      <img src="docs/step7_ble-scan.png" width="200">
+    </p>
+
+- 3-2. BLE の接続対象を確認して`CONNECT`を押下する。
+    <p align="center">
+      <img src="docs/step8_ble-connect.png" width="200">
+    </p>
+
+- 3-3. デバイスとスマホのデータを送受信するように設定する。
+    <p align="center">
+      <img src="docs/step9_transmit-receive.png" width="250">
+    </p>
+
+- 3-4. ESP32 -> スマホへデータを受信する様子を確認する
+    <p align="center">
+      <img src="docs/step10_check-ble-data.png" width="200">
+    </p>
