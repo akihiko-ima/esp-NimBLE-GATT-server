@@ -163,3 +163,47 @@ Component config
      └── Kernel
          └── Tick rate (Hz)
 ```
+
+#### `idf.py`コマンド
+
+- プロジェクトの作成
+
+```bash
+idf.py create-project {project name}
+```
+
+- 開発ボードの設定
+
+```bash
+idf.py set-target esp32
+```
+
+- config の設定
+
+```bash
+idf.py menuconfig
+```
+
+- ビルド
+
+```bash
+idf.py build
+```
+
+- 書き込み
+
+```bash
+idf.py -p {COM Port No.} flash
+```
+
+- シリアルモニター
+
+```bash
+idf.py -p {COM Port No.} monitor
+```
+
+- ビルドのクリーンアップ
+
+```bash
+idf.py fullclean
+```
